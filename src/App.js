@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Footer from './components/Footer/Footer';
+import Rating from './components/Rating/Rating';
+import Thankyou from './components/Thankyou/Thankyou';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [isSubmitted, setIsSubmitted] = useState(false);
+	const [rating, setRating] = useState('5');
+
+	const handleRating = (e) => {
+		console.log(e.target.innerText);
+		setRating(e.target.innerText);
+	};
+
+	const handleSubmit = () => {
+		setIsSubmitted((prevRating) => !prevRating);
+	};
+
+	return (
+		<main>
+			<Rating isSubmitted={isSubmitted} handleRating={handleRating} handleSubmit={handleSubmit} />
+			<Thankyou isSubmitted={isSubmitted} rating={rating} handleSubmit={handleSubmit} />
+			<Footer />
+		</main>
+	);
 }
 
 export default App;

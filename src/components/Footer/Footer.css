@@ -1,0 +1,9 @@
+.attribution {
+	font-size: 14px;
+	text-align: center;
+	margin: 35px 0px;
+	color: var(--mediumGrey);
+}
+.attribution a {
+	color: var(--orange) !important;
+}

@@ -1,0 +1,63 @@
+/* Thnkyou */
+.thankyou__card__container {
+	max-width: 400px;
+	background: linear-gradient(120deg, var(--darkBlue), var(--veryDarkBlue));
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.thankyou__card__thankyou {
+	margin-top: 10px;
+}
+.thankyou__card__rate-info {
+	background-color: var(--darkBlue);
+	color: var(--orange);
+	border: none;
+	border-radius: 25px;
+	padding: 10px 20px 8px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+.thankyou__card__info {
+	/* margin: 10px 0px; */
+	text-align: center;
+	padding: 10px;
+}
+.thankyou__card__info h1 {
+	color: var(--white);
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+.thankyou__card__info p {
+	color: var(--lightGrey);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5rem;
+}
+
+.thankyou__card__submit-btn {
+	margin-top: 10px;
+	width: 100%;
+}
+.thankyou__card__submit-btn button {
+	cursor: pointer;
+	background-color: var(--orange);
+	color: var(--white);
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	width: 100%;
+	border: none;
+	border-radius: 25px;
+	padding: 15px 0px;
+	transition: 0.3s;
+}
+
+.thankyou__card__submit-btn button:hover {
+	cursor: pointer;
+	background-color: var(--white);
+	color: var(--orange);
+}
